@@ -2,17 +2,36 @@
 
 First public release of **earStep**, a free circular drum/sample sequencer by **Alex Ears**.
 
-## Available builds
+## Downloads
 
-- macOS — VST3 / AU / Standalone
-- Windows x64 — VST3 / Standalone
-- Linux x86_64 — VST3 / Standalone
+Choose the build for your platform:
 
-## Notes
+- **macOS Universal** — VST3 / AU / Standalone
+- **Windows x64** — VST3 / Standalone
+- **Linux x86_64** — VST3 / Standalone
 
-macOS and Windows builds are currently unsigned, so Gatekeeper or SmartScreen may show a warning during installation.
+## Highlights
 
-**Author:** Alex Ears  
-**Contact:** [@Alexears](https://t.me/Alexears)
+- Circular step-sequencer workflow
+- Sample-based drum and percussion sequencing
+- Host tempo sync
+- Swing and adjustable Grid
+- Per-step velocity, probability and ratchet controls
+- Multiple interface themes
+- Standalone application
 
-Freeware. Source code is currently private and earStep is not an open-source project.
+## Installation note
+
+The current macOS and Windows builds are **unsigned**.
+
+- macOS Gatekeeper may require **System Settings → Privacy & Security → Open Anyway**.
+- Windows SmartScreen may show a warning.
+
+Full instructions: [INSTALL.md](INSTALL.md)
+
+## Contact
+
+**Alex Ears**  
+Telegram: [@Alexears](https://t.me/Alexears)
+
+earStep is freeware. Source code is currently private and the project is not open-source.
