@@ -15,12 +15,17 @@ If macOS shows a security warning:
 
 Do not disable Gatekeeper globally.
 
-Typical plug-in locations:
+The PKG installer uses the standard system-wide plug-in locations:
 
-- VST3: `~/Library/Audio/Plug-Ins/VST3/`
-- AU: `~/Library/Audio/Plug-Ins/Components/`
+- VST3: `/Library/Audio/Plug-Ins/VST3/`
+- AU: `/Library/Audio/Plug-Ins/Components/`
 
-After installation, restart your DAW or rescan plug-ins.
+After installation, fully quit and restart your DAW or rescan plug-ins.
+
+If you previously installed an older development build into your user Library, make sure there is not a second copy of earStep in:
+
+- `~/Library/Audio/Plug-Ins/VST3/`
+- `~/Library/Audio/Plug-Ins/Components/`
 
 ## Windows
 
