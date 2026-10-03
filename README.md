@@ -6,7 +6,16 @@
 
 ## Download
 
-Get the latest build from **[GitHub Releases](https://github.com/Alexears/earStep/releases/latest)**.
+### macOS
+- [Download DMG](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-macOS-universal.dmg)
+- [Download PKG](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-macOS-universal.pkg)
+
+### Windows x64
+- [Download Setup EXE](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Windows-x64-Setup.exe)
+
+### Linux x86_64
+- [Download DEB](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Linux-amd64.deb)
+- [Download TAR.GZ](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Linux-x86_64.tar.gz)
 
 > macOS and Windows builds are currently unsigned. Gatekeeper or SmartScreen may show a warning during installation. See the [installation notes](INSTALL.md).
 
