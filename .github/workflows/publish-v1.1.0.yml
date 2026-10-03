@@ -1,0 +1,39 @@
+name: Publish earStep v1.1.0
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - ".github/workflows/publish-v1.1.0.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download release artifacts
+        run: |
+          mkdir -p dist
+          curl -L --fail --retry 2 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-7b8c-8210-9c42-255de57f45bf/raw?se=2026-10-03T15%3A39%3A14Z&sp=r&sv=2026-02-06&sr=b&scid=5cd939fb-fe50-5f27-a1a7-500e0adb439a&skoid=a0b9f82a-c86e-4064-a822-2aa38890bb37&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-02T19%3A54%3A32Z&ske=2026-10-03T19%3A54%3A32Z&sks=b&skv=2026-02-06&sig=Xm47ReG1Asnxw8TgLguTh922n7tRBV6SlQ7XIiriCC0%3D' -o mac.zip
+          curl -L --fail --retry 2 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-e92c-8210-af33-2b051936853b/raw?se=2026-10-03T15%3A39%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=d547497e-4d91-51b5-b487-a3e55981507d&skoid=a0b9f82a-c86e-4064-a822-2aa38890bb37&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-03T05%3A26%3A04Z&ske=2026-10-04T05%3A26%3A04Z&sks=b&skv=2026-02-06&sig=dVw3HNo0MMrU1a6AMS7NXoYWQ465H4bcE0t7pQy7fks%3D' -o linux.zip
+          curl -L --fail --retry 2 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-a8ec-8210-8f51-d313c1f355d8/raw?se=2026-10-03T15%3A39%3A20Z&sp=r&sv=2026-02-06&sr=b&scid=c65b206d-507b-552d-952d-2a8febf1f312&skoid=a0b9f82a-c86e-4064-a822-2aa38890bb37&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-03T06%3A39%3A49Z&ske=2026-10-04T06%3A39%3A49Z&sks=b&skv=2026-02-06&sig=E1Y0Z2XyQSfj0KP8kY1hvpoqukU4aUlWHCHF//ODgVM%3D' -o windows.zip
+          unzip -q mac.zip -d dist
+          unzip -q linux.zip -d dist
+          unzip -q windows.zip -d dist
+          ls -lh dist
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v1.1.0 dist/* \
+            --repo "${{ github.repository }}" \
+            --title "earStep v1.1.0" \
+            --notes-file RELEASE_NOTES.md \
+            --target main \
+            --latest
