@@ -1,6 +1,6 @@
-# earStep v1.0.0
+# earStep v1.1.0
 
-First public release of **earStep**, a free circular drum/sample sequencer by **Alex Ears**.
+Feature update for **earStep**, a free circular drum/sample sequencer by **Alex Ears**.
 
 ## Downloads
 
@@ -10,15 +10,23 @@ Choose the build for your platform:
 - **Windows x64** — VST3 / Standalone
 - **Linux x86_64** — VST3 / Standalone
 
-## Highlights
+## New in 1.1.0
 
-- Circular step-sequencer workflow
-- Sample-based drum and percussion sequencing
-- Host tempo sync
-- Swing and adjustable Grid
-- Per-step velocity, probability and ratchet controls
-- Multiple interface themes
-- Standalone application
+- Per-sample multi-output routing: MAIN / OUT 2 ... OUT 16
+- Auto Output Routing with sequential track assignment
+- Audio export for Current Pattern and Song:
+  - Mix
+  - Individual Sounds
+- Active sample ordering with ring/track numbers
+- MIDI Thru and expanded playback settings
+- Click-outside closing for Settings and Export
+
+## UX and stability
+
+- Safer multi-output handling after testing
+- Swing label alignment improvements
+- Removed redundant Output Stems export option
+- Removed experimental double-click ring selection
 
 ## Installation note
 
