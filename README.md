@@ -6,7 +6,7 @@
 
 ## Download
 
-**[Download earStep v1.0.0](../../releases/tag/v1.0.0)**
+**[Download earStep v1.1.0](../../releases/tag/v1.1.0)**
 
 Release assets:
 - macOS Universal — DMG / PKG
@@ -22,6 +22,13 @@ Release assets:
 - Host tempo sync and Swing
 - Adjustable Grid
 - Per-step velocity, probability and ratchet controls
+- Per-sample output routing: MAIN / OUT 2 ... OUT 16
+- Auto Output Routing with sequential track assignment
+- WAV export for Current Pattern and Song
+  - Mix
+  - Individual Sounds
+- Active sample ordering with ring/track numbers
+- MIDI Thru and expanded playback settings
 - Multiple interface themes
 - Standalone version for use without a DAW
 
@@ -39,7 +46,7 @@ See **[INSTALL.md](INSTALL.md)** for platform-specific installation notes.
 
 ## Status
 
-**v1.0.0** is the first public freeware release of earStep.
+**v1.1.0** is the current public freeware release of earStep.
 
 The source code is currently private. earStep is **not an open-source project**.
 
