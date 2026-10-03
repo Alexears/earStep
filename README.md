@@ -6,16 +6,12 @@
 
 ## Download
 
-### macOS
-- [Download DMG](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-macOS-universal.dmg)
-- [Download PKG](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-macOS-universal.pkg)
+**[Download earStep v1.0.0](../../releases/tag/v1.0.0)**
 
-### Windows x64
-- [Download Setup EXE](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Windows-x64-Setup.exe)
-
-### Linux x86_64
-- [Download DEB](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Linux-amd64.deb)
-- [Download TAR.GZ](https://github.com/Alexears/earStep/raw/main/earStep-1.0.0-Linux-x86_64.tar.gz)
+Release assets:
+- macOS Universal — DMG / PKG
+- Windows x64 — Setup EXE
+- Linux x86_64 — DEB / TAR.GZ
 
 > macOS and Windows builds are currently unsigned. Gatekeeper or SmartScreen may show a warning during installation. See the [installation notes](INSTALL.md).
 
